@@ -451,7 +451,7 @@ void InterventionalRadiologyController<DataTypes>::applyAction(sofa::beamadapter
         msg_warning() << "############MyFlag2##########";
         msg_warning() << "Id: " << id << " (activated node num)";
         auto xInstrTip = sofa::helper::getWriteOnlyAccessor(d_xTip);
-        msg_warning() << "pos: " << xInstrTip[0] << " (position)";
+        msg_warning() << "pos: " << xInstrTip[id] << " (position)";
     }
     }
 }
