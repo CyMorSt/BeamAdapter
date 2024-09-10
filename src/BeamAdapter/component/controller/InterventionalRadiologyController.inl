@@ -441,7 +441,7 @@ void InterventionalRadiologyController<DataTypes>::applyAction(sofa::beamadapter
     }
     case BeamAdapterAction::DROP_TOOL:
     {
-        msg_warning() << "Releasing catheter or brokenIn2 mode is not anymore supported. Feature has been removed after release v23.06";
+        msg_warning() << "############MyFlag##########";
     }
     }
 }
