@@ -384,7 +384,7 @@ void InterventionalRadiologyController<DataTypes>::applyAction(sofa::beamadapter
     case BeamAdapterAction::MOVE_FORWARD:
     {
         auto xInstrTip = sofa::helper::getWriteOnlyAccessor(d_xTip);
-        xInstrTip[id] += d_step.getValue();
+        xInstrTip[id] += d_step.getValue() * 0.1;
         break;
     }
     case BeamAdapterAction::MOVE_BACKWARD:
