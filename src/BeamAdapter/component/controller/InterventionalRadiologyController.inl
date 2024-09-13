@@ -282,9 +282,6 @@ void InterventionalRadiologyController<DataTypes>::onKeyPressedEvent(KeypressedE
         case 21: // bas = 21
             applyAction(BeamAdapterAction::MOVE_BACKWARD);
             break;
-        case 'U':
-            applyAction(BeamAdapterAction::UPDATE);
-            break;
         case '*':
             {
                 if(m_RW)
@@ -454,13 +451,9 @@ void InterventionalRadiologyController<DataTypes>::applyAction(sofa::beamadapter
     case BeamAdapterAction::DROP_TOOL:
     {
          msg_warning() << "############MyFlag##########";
-    }
-    case BeamAdapterAction::UPDATE:
-    {
-        msg_warning() << "############MyFlag2##########";
-        msg_warning() << "Id: " << id << " (activated node num)";
-        auto xInstrTip = sofa::helper::getWriteOnlyAccessor(d_xTip);
-        msg_warning() << "pos: " << xInstrTip[id] << " (position)";
+         msg_warning() << "Id: " << id << " (activated node num)";
+         auto xInstrTip = sofa::helper::getWriteOnlyAccessor(d_xTip);
+         msg_warning() << "pos: " << xInstrTip[id] << " (position)";
     }
     }
 }
