@@ -62,7 +62,7 @@ InterventionalRadiologyController<DataTypes>::InterventionalRadiologyController(
 , d_xTip(initData(&d_xTip,"xtip", "curvilinear abscissa of the tip of each interventional radiology instrument"))
 , d_rotationInstrument(initData(&d_rotationInstrument,"rotationInstrument", "angle of rotation for each interventional radiology instrument"))
 , d_step(initData(&d_step,(Real)0.1,"step","base step when changing beam length"))
-, d_angularStep(initData(&d_angularStep,(Real)(3.1416/20.0),"angularStep","base step when changing beam angle"))
+, d_angularStep(initData(&d_angularStep,(Real)(3.1416/100.0),"angularStep","base step when changing beam angle"))
 , d_speed(initData(&d_speed,(Real)0.0,"speed","continuous beam length increase/decrease"))
 , d_startingPos(initData(&d_startingPos,Coord(),"startingPos","starting pos for inserting the instrument"))
 , d_threshold(initData(&d_threshold, (Real)0.01, "threshold", "threshold for controller precision which is homogeneous to the unit of length used in the simulation"))
