@@ -36,7 +36,6 @@
 #include <sofa/core/objectmodel/MouseEvent.h>
 #include <sofa/core/objectmodel/KeypressedEvent.h>
 #include <sofa/component/topology/container/dynamic/EdgeSetGeometryAlgorithms.h>
-#include <sofa/core/behavior/MechanicalState.h>
 #include <sofa/helper/AdvancedTimer.h>
 #include <sofa/helper/system/FileRepository.h>
 #include <sofa/type/vector_algorithm.h>
