@@ -450,9 +450,11 @@ void InterventionalRadiologyController<DataTypes>::applyAction(sofa::beamadapter
     case BeamAdapterAction::DROP_TOOL:
     {
          msg_warning() << "############MyFlag##########";
-         msg_warning() << "Id: " << id << " (activated node num)";
          auto xInstrTip = sofa::helper::getWriteOnlyAccessor(d_xTip);
          msg_warning() << "pos: " << xInstrTip[id] << " (position)";
+         Data<VecCoord>* datax = this->getMechanicalState()->write(core::VecCoordId::position());
+         auto x = sofa::helper::getWriteOnlyAccessor(*datax);
+         msg_warning() << x;
     }
     }
 }
