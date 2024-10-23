@@ -270,16 +270,16 @@ void InterventionalRadiologyController<DataTypes>::onKeyPressedEvent(KeypressedE
         case '0':
             applyAction(BeamAdapterAction::USE_TOOL_0);
             break;
-        case 20: // droite = 20
+        case '6': // droite = 20
             applyAction(BeamAdapterAction::SPIN_RIGHT);
             break;
-        case 18: // gauche = 18
+        case '4': // gauche = 18
             applyAction(BeamAdapterAction::SPIN_LEFT);
             break;
-        case 19: // fleche haut = 19
+        case '8': // fleche haut = 19
             applyAction(BeamAdapterAction::MOVE_FORWARD);
             break;
-        case 21: // bas = 21
+        case '5': // bas = 21
             applyAction(BeamAdapterAction::MOVE_BACKWARD);
             break;
         case '*':
